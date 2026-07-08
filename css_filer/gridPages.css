@@ -1,0 +1,142 @@
+/* ----------------------------- */
+/* --------Grid Layout-------- */
+/* ----------------------------- */
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 24px;
+  color: #333;
+  text-align: left;
+}
+.grid-page {
+  min-height: 100vh;
+  padding: 80px 60px;
+  background-color: #f7f7f7;
+}
+.project-grid {
+  align-items: start;/*lägger korten vid toppen av raden istället för att sträckas ut*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 32px;
+  row-gap: 70px;
+
+  margin-bottom: 70px;
+}
+
+/* ----------------------------- */
+/* --------Project Card-------- */
+/* ----------------------------- */
+
+.project-card {
+  position: relative;/*detta gör så att alla barn som använder position: absolute, positioneras relativt till project card*/
+  overflow: hidden;/*klipper bort saker som hamnar utanför kortet*/
+
+  background-color: #ffffff;
+  border: 3px solid #ddd;
+
+  transition: transform 0.2s ease,/*gör hover animationen "mjukare"*/
+              box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.12);
+}
+.project-card img {
+  width: 100%;
+  height: 300px; 
+
+  object-fit: cover;
+  display: block;
+}
+.project-card-content {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+
+  /* sätter en skugga på botten delen av korten*/
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0)
+  );
+}
+.project-card-content h3 {
+  color: rgb(255, 255, 255);
+
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.project-card-content p {
+  color: rgb(255, 255, 255);
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+.project-date {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    padding: 6px 12px;
+
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.5);
+
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+
+    backdrop-filter: blur(4px);
+
+    z-index: 2;
+}
+.project-date.dark {
+    color: #222;
+    border-color: rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.7);
+}
+
+/*----Link----*/
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* --------Tags-------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.tags span {
+  color: white;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.15); /*genomskinliga tag bakgrunder*/
+}
+
+
+/* ----------------------------- */
+/* --------Smaller Screens-------- */
+/* ----------------------------- */
+
+@media (max-width: 1100px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-page {
+    padding: 50px 24px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frans Wikman | Art</title>
+  <link rel="stylesheet" href="../css_filer/allPages.css">
+  <link rel="stylesheet" href="../css_filer/sidebar.css">
+  <link rel="stylesheet" href="../css_filer/gridPages.css">
+  <link rel="stylesheet" href="../css_filer/art.css">
+</head>
+
+<body>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="software.html">Software</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="thoughts.html">Thoughts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <div class="top-part"><h1>Art</h1></div>
+
+    
+    <section class="grid-page">
+      <!------------------------------------>
+      <!-- Rogue Conflict Promotional Art -->
+      <!------------------------------------>
+      <h2 class="section-title">Rogue Conflict promotional art</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card art-card"><!--mellanrummet gör så att klassen har 2 namn -->
+          <img src="../bilder/spel/main_capsule_with_logo.png" alt="Rogue Conflict capsule art">
+
+          <div class="project-card-content">
+            <h3>Rogue Conflict Steam Capsule Art</h3>
+            <p>Steam capsule art I created for my game Rogue Conflict.</p>
+          </div>
+        </article>
+
+        <article class="project-card art-card vertical-art-card">
+
+          <img src="../bilder/spel/library_capsule.png" alt="Game art example">
+
+          <div class="project-card-content">
+            <h3>Rogue Conflict library capsule art</h3>
+            <p>Steam Library art I created for my game Rogue Conflict.</p>
+          </div>
+
+        </article>
+
+      </div>
+
+      <!------------------------------------>
+      <!------- Learning Projects ---------->
+      <!------------------------------------>
+      <h2 class="section-title">Learning Projects</h2>
+
+      <div class="project-grid">
+
+      <a href="Art Projects/drawingCourse.html" class="card-link">
+      <article class="project-card">
+
+        <div class="project-date">Summer 2022</div>
+
+        <img src="./Art Projects/bilder/kyrka.jpg" alt="kyrka drawing">
+
+        <div class="project-card-content">
+        <h3>Drawing Course</h3>
+        <p>"The Ultimate Drawing Course - Beginner to Advanced" on Udemy, which I took to learn the fundamentals of drawing.</p>
+        </div>
+
+      </article>
+      </a>
+
+      <a href="Art Projects/pixelArtCourse.html" class="card-link">
+      <article class="project-card">
+
+        <div class="project-date">Summer 2022</div>
+
+        <img src="./Art Projects/bilder/marmoset1.JPG" alt="marmoset 1 drawing">
+
+        <div class="project-card-content">
+        <h3>Pixel Art Course</h3>
+        <p>A Udemy course I took on how to draw pixel art for games.</p>
+        </div>
+
+      </article>
+      </a>
+
+      <a href="Art Projects/digitalPaintingCourse.html" class="card-link">
+      <article class="project-card">
+
+        <div class="project-date">Spring 2025</div>
+
+        <img src="./Art Projects/bilder/digital7.jpg" alt="digital 7 drawing">
+
+        <div class="project-card-content">
+        <h3>Digital Painting Course</h3>
+        <p>A course I took covering the full spectrum of digital painting.</p>
+        </div>
+
+      </article>
+      </a>
+
+      </div>
+
+    </section>
+
+    <div class="bottom-part"><p class="copyright"> © 2026 Frans Wikman</p></div>
+
+  </main>
+
+  
+
+  <!--Detta är overlay imagen som dyker upp när du klickar på en bild-->
+  <div class="image-overlay" id="imageOverlay">
+    <span class="close-overlay">&times;</span><!--&times är htmls sätt att skriva en "X" knapp-->
+    <img id="overlayImage" src="" alt=""><!--src och alt tomma, eftersom dom sätts på overlay image i JS när man klickar på en bild-->
+  </div>
+
+  <script src="../javascript_filer/art.js"></script>
+</body>
+</html>

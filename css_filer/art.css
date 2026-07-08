@@ -1,0 +1,56 @@
+.art-card {
+  /*Ändrar muspekaren tillen pointer när man hoovrar över art*/
+  cursor: pointer;
+}
+.image-overlay {
+  display: none;/*overlay skall vara osynlig till en början*/
+  /*java script gör den synlig*/
+
+  position: fixed;/*ser till att overlay bilden är fäst i webbläsar fönstret, även ifall användaren scrollar*/
+  /*"top:0" placerar överkanten av bilden längst upp, och left till vänster*/
+  top: 0;
+  left: 0;
+
+  /*ser till att overlay imagen tar upp hela webläsarens bredd och höjd*/
+  width: 100%;
+  height: 100%;
+
+  /*gör bakgrunden, alltså de delar av skärmen som inte täckas av bilden, till mörk och genomskinling*/
+  background-color: rgba(0, 0, 0, 0.85);
+
+  /*centrerar bilden*/
+  justify-content: center;
+  align-items: center;
+
+  /*ser till att bilden hamnar överst, genom att justera dens z-vector*/
+  z-index: 1000;
+}
+.image-overlay img {
+  /*ser till att själva bilden aldrig tar upp mer än 90% av skärmen*/
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+.close-overlay {
+  position: absolute;
+  /*stoppar X:et i övre högre delen av overlayen*/
+  top: 30px;
+  right: 40px;
+
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+/* ----------------------------- */
+/* --------Vertical Art-------- */
+/* ----------------------------- */
+.vertical-art-card {
+  max-width: 320px;
+}
+
+.vertical-art-card img {
+  height: 500px;
+  object-fit: contain;
+  background-color: #1f1f1f;
+}

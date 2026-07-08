@@ -1,0 +1,80 @@
+.contact-page {
+  min-height: 100vh;/*gör så att contagt page delen täcker hela skärmen (100% utav den)*/
+  background-color: #f7f7f7;
+  padding: 80px 60px;
+  text-align: left;
+}
+
+.contact-card {
+  max-width: 700px;
+}
+
+.location {
+  font-size: 20px;
+  margin-bottom: 40px;
+  max-width: none;
+}
+
+.contact-links {
+  display: flex;/* Använd Flexbox systemet för att arrangera barnen*/
+  flex-direction: column;/* sätter flexbox's struktur */
+  gap: 18px;/* avstånd mellan varje item i listan */
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  width: fit-content;
+
+  color: #222;
+  text-decoration: none;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #2f4156;
+  transform: translateX(6px);
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2f4156;
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ----------------------------- */
+/* --------Plattor Endast-------- */
+/* ----------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .contact-link {
+    font-size: 32px;
+  }
+
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .location {
+    font-size: 28px;
+  }
+}
