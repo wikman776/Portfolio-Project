@@ -71,7 +71,7 @@ This project helped me practice:
 
 ## Home Page Screenshot
 
-![Home Page](MyPortfolioWebsite/bilder/site_images/homePage.jpg)
+![Home Page](bilder/site_images/homePage.jpg)
 
 ## Author
 
