@@ -71,7 +71,11 @@ This project helped me practice:
 
 ## Home Page Screenshot
 
-![Home Page](bilder/site_images/homePage.jpg)
+![Home Page](bilder/site_images/homePage.JPG)
+
+## Website Link
+
+https://wikman776.github.io/Portfolio-Project/html_filer/index.html
 
 ## Author
 
